@@ -13,6 +13,8 @@
 # This script assumes all files are using their default names and that the working directory is the
 # root of the directory inside the uncompressed data file from the project page
 
+library(dplyr)
+
 run_analysis <- function () {
   # First, read the test files
   xtest <- read.table("test/X_test.txt")
